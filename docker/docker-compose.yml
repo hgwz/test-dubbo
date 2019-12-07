@@ -7,6 +7,8 @@ services:
     image: 'producer:latest'
     environment:
       - ZOOKEEPER_SERVER=zookeeper
+    ports:
+      - 20880:20880
   consumer:
     image: 'consumer:latest'
     environment:
